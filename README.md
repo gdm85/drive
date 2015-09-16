@@ -68,16 +68,14 @@
 
 go 1.7.X or higher is required. See [here](https://golang.org/doc/install) for installation instructions and platform installers.
 
-* Make sure to set your GOPATH in your env, .bashrc or .bash\_profile file. If you have not yet set it, you can do so like this:
+### Building
 
-```shell
-cat << ! >> ~/.bashrc
-> export GOPATH=\$HOME/gopath
-> export PATH=\$GOPATH:\$GOPATH/bin:\$PATH
-> !
-source ~/.bashrc # To reload the settings and get the newly set ones # Or open a fresh terminal
+On a BSD/Linux you can simply:
 ```
-The above setup will ensure that the drive binary after compilation can be invoked from your current path.
+make
+```
+
+And the output binary will be built in ``bin/`` directory.
 
 ## Installation
 
